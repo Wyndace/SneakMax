@@ -20,6 +20,7 @@ img {
 
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .list-reset {
@@ -52,8 +53,11 @@ a {
 .btn-reset {
   border: none;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
   background: transparent;
   cursor: pointer;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .btn {

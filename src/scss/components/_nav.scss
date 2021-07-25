@@ -5,13 +5,28 @@
   }
 
   &__item {
+    transition: transform 0.05s ease-out;
+
     &:not(:last-child) {
       margin-right: var(--main-offset);
+    }
+
+    &:hover {
+      text-decoration: underline;
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1);
     }
   }
 
   &__link {
     font: var(--xsmall-book-font);
     color: var(--color-white);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

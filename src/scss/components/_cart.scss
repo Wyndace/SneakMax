@@ -5,12 +5,21 @@
     position: relative;
     width: 20px;
     height: 20px;
+    transition: transform 0.05s ease-out;
 
     svg {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1);
     }
   }
 
