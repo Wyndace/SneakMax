@@ -1,4 +1,3 @@
 # SneakMax
-<!--
-  (See my work here -> (*click*)[])
--->
+
+See my work here -> [\*click\*](https://wyndace.github.io/SneakMax)
