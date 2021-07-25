@@ -1,1 +1,5 @@
 auth.json
+node_modules
+app
+package-lock.json
+rev.json
