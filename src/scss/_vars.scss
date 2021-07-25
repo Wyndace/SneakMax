@@ -4,6 +4,11 @@
   --color-white: #fff;
   --color-accent: #f14f4f;
   --color-border: rgba(255, 255, 255, 50%);
+  --color-east-bay: #484283;
+  --color-mojo: #cc4949;
+  --color-burnt-umber: #8c2828;
+  --color-river-bed: #444b58;
+  --color-tuna: #31343c;
 
   // Отступы
   --grid-gap: 20px;
@@ -12,6 +17,10 @@
 
   // Шрифты
   --font-family: "Intro", sans-serif;
-  --middle-high-font: 700 30px / 140% var(--font-family);
-  --small-font: 300 14px / 140% var(--font-family);
+  --large-bold-font: 700 30px / 140% var(--font-family);
+  --xlarge-regular-font: 400 36px / 140% var(--font-family);
+  --middle-regula-font: 400 30px / 140% var(--font-family);
+  --small-regular-font: 400 16px / 140% var(--font-family);
+  --small-book-font: 300 16px / 140% var(--font-family);
+  --xsmall-book-font: 300 14px / 140% var(--font-family);
 }

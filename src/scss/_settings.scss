@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #333;
+  background-color: var(--color-white);
 }
 
 img {
@@ -54,6 +54,58 @@ a {
   padding: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 22px 47px;
+  font: var(--middle-regular-font);
+  text-align: center;
+  cursor: pointer;
+
+  &--primary {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+
+    &:hover {
+      background-color: var(--color-mojo);
+    }
+
+    &:active {
+      background-color: var(--color-burnt-umber);
+    }
+  }
+
+  &--secondary {
+    color: var(--color-white);
+    background-color: var(--color-river-bed);
+
+    &:hover {
+      background-color: var(--color-tuna);
+    }
+
+    &:active {
+      background-color: var(--color-river-bed);
+    }
+  }
+
+  &--thirdly {
+    border: 1px solid var(--color-river-bed);
+    color: var(--color-river-bed);
+    background-color: transparent;
+
+    &:hover {
+      border: 1px solid var(--color-river-bed);
+      color: var(--color-white);
+      background-color: var(--color-river-bed);
+    }
+
+    &:active {
+      border: 1px solid var(--color-river-bed);
+      color: var(--color-river-bed);
+      background-color: transparent;
+    }
+  }
 }
 
 .container {
