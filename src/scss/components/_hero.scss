@@ -36,6 +36,9 @@
   &__back {
     position: absolute;
     left: 50%;
+    top: 50%;
+    margin-top: 40px;
+    margin-left: 35px;
     font-family: "Intro";
     font-weight: 700;
     font-style: normal;
@@ -43,7 +46,7 @@
     line-height: 200px;
     color: var(--color-white);
     opacity: 0.12;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     user-select: none;
     -webkit-touch-callout: none;
   }
