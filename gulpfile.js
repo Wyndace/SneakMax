@@ -103,6 +103,9 @@ const weightCheker = (fontname) => {
 		case /Light/.test(fontname):
 			weight = 300;
 			break;
+		case /Book/.test(fontname):
+			weight = 300;
+			break;
 		case /Regular/.test(fontname):
 			weight = 400;
 			break;
@@ -215,6 +218,7 @@ const globalWatching = () => {
 	watch('./src/html/*.html', htmlBuilding);
 	watch('./src/img/**.{jpg,jpeg,png,svg}', imgBuilding);
 	watch('./src/video/**.{mp4,mpeg,webm,mpg,avi,mov}', videoBuilding);
+	watch('./src/img/svg/**.svg', svgToSpriteBuilding);
 	watch('./src/resources/**', resourcesBuilding);
 	watch('./src/fonts/**.ttf', fontsBuilding);
 	watch('./src/fonts/**.ttf', fontsStyleBuilding);

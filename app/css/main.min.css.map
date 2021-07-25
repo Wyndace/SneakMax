@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/_header.scss"],"names":[],"mappings":"AAEA,IACE,iBAAA,CACA,YAAA","file":"main.min.css","sourcesContent":["// Write your code here...\n\n.es {\n  position: relative;\n  height: 100px;\n}"]}
