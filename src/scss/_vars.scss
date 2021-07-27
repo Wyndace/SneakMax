@@ -9,17 +9,26 @@
   --color-burnt-umber: #8c2828;
   --color-river-bed: #444b58;
   --color-tuna: #31343c;
+  --color-seashell-peach: #fff4ee;
+  --color-cameo: #dbbba9;
+  --color-bombay: #b2b5bb;
 
   // Отступы
   --grid-gap: 20px;
+  --section-offset: 60px;
   --main-offset: 40px;
   --second-offset: 20px;
+  --third-offset: 10px;
+
+  // Границы
+  --border-radius: 4px;
 
   // Шрифты
   --font-family: "Intro", sans-serif;
   --large-bold-font: 700 30px / 140% var(--font-family);
   --xlarge-regular-font: 400 36px / 140% var(--font-family);
-  --middle-regula-font: 400 30px / 140% var(--font-family);
+  --middle-regular-font: 400 30px / 140% var(--font-family);
+  --medium-book-font: 300 24px / 140% var(--font-family);
   --small-regular-font: 400 16px / 140% var(--font-family);
   --small-book-font: 300 16px / 140% var(--font-family);
   --xsmall-book-font: 300 14px / 140% var(--font-family);

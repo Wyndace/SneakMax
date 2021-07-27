@@ -61,9 +61,9 @@ a {
 }
 
 .btn {
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   padding: 22px 47px;
-  font: var(--middle-regular-font);
+  font: var(--small-regular-font);
   text-align: center;
   transition: color 0.03s ease-in, background-color 0.03s ease-in;
   cursor: pointer;
@@ -127,4 +127,32 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
+}
+
+.title {
+  margin: 0;
+  width: fit-content;
+  font: var(--large-bold-font);
+  line-height: 100%;
+  color: var(--river-bed);
+
+  &-min {
+    margin: 0;
+    width: fit-content;
+    font: var(--medium-book-font);
+    line-height: 100%;
+    color: var(--river-bed);
+  }
+}
+
+.text {
+  margin: 0;
+  width: fit-content;
+  font: var(--small-book-font);
+  line-height: 100%;
+  color: var(--river-bed);
+}
+
+.checkbox {
+  @include checkbox(var(--small-book-font), var(--color-river-bed), var(--third-offset), 24px, 24px, var(--border-radius), 1px, var(--color-cameo), url("../img/mark.svg") center center/15px 12px no-repeat);
 }
