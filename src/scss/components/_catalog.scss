@@ -1,0 +1,17 @@
+.catalog {
+  &__container {
+    padding: var(--section-offset) 0;
+  }
+
+  &__filter {
+    grid-column: 3 span;
+  }
+
+  &__goods {
+    grid-column: 9 span;
+  }
+
+  &__title {
+    margin-bottom: var(--main-offset);
+  }
+}
