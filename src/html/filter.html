@@ -1,0 +1,56 @@
+<aside class="catalog__filter filter">
+  <form class="filter__container">
+    <h3 class="filter__title title-min">Подбор по&nbsp;параметрам</h3>
+    <div class="filter-block filter-price">
+      <strong class="filter-block__title filter-price__title">Цена, руб</strong>
+      <div class="filter-price__inps">
+        <input type="number" name="minCost" id="minCost" value="1850" class="filter-price__inp">
+        <input type="number" name="maxCost" value="25768" id="maxCost" class="filter-price__inp">
+      </div>
+      <div class="filter-price__range"></div>
+    </div>
+    <div class="filter-block filter-sex">
+      <strong class="filter-block__title filter-sex__title">Пол</strong>
+      <div class="filter-sex__checkboxes filter-block">
+        @include('./mixins/checkbox.html', {"id": "manChecker", "parrent-class": "filter-sex", "name":"manChecker",
+        "text": "Мужской"})
+        @include('./mixins/checkbox.html', {"id": "womanChecker", "parrent-class": "filter-sex", "name":"womanChecker",
+        "text": "Женский"})
+      </div>
+    </div>
+    <div class="filter-block filter-size">
+      <strong class="filter-block__title filter-size__title">Размер</strong>
+      <table class="filter-size__table filter-table">
+        <caption class="filter-table__title">Таблица размеров</caption>
+        <tbody>
+          <tr>
+            <td class="filter-table__cell"><input type="checkbox" name="35" id="35"><label class="filter-table__content"
+                for="35">35</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="36" id="36"><label class="filter-table__content"
+                for="36">36</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="37" id="37"><label class="filter-table__content"
+                for="37">37</label class="filter-table__content"></td>
+          </tr>
+          <tr>
+            <td class="filter-table__cell"><input type="checkbox" name="38" id="38"><label class="filter-table__content"
+                for="38">38</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="39" id="39"><label class="filter-table__content"
+                for="39">39</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="40" id="40"><label class="filter-table__content"
+                for="40">40</label class="filter-table__content"></td>
+          </tr>
+          <tr>
+            <td class="filter-table__cell"><input type="checkbox" name="41" id="41"><label class="filter-table__content"
+                for="41">41</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="42" id="42"><label class="filter-table__content"
+                for="42">42</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="43" id="43"><label class="filter-table__content"
+                for="43">43</label class="filter-table__content"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="submit" class="btn-reset btn btn--secondary filter__btn">Применить</button>
+    <button type="reset" class="btn-reset filter__btn--reset">сбросить</button>
+  </form>
+</aside>
