@@ -5,21 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SneakMax</title>
-  <link rel="stylesheet" href="./css/common-7f5ce50027.min.css">
+  <link rel="stylesheet" href="./css/common-b12d93d46f.min.css">
   <link rel="stylesheet" href="./css/vendor-b03f83f23a.min.css">
-  <link rel="stylesheet" href="./css/main-3be7550fe9.min.css">
+  <link rel="stylesheet" href="./css/main-112969a819.min.css">
 </head>
 <body>
   <div class="site-container">
   <header class="header">
   <div class="container grid header__container">
     <div class="header__left">
-      <a class="logo header__logo">SneakMax</a>
+      <a href="#hero" class="logo header__logo">SneakMax</a>
     </div>
     <div class="header__right">
       <nav class="nav header__nav">
         <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link">Каталог</a></li>
           <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Подбор товара</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Наша команда</a></li>
@@ -38,7 +38,7 @@
     </div>
   </div>
 </header>
-      <section class="hero">
+      <section class="hero" id="hero">
   <div class="container hero__container">
       <span class="hero__back">SneakMax</span>
       <h1 class="hero__title">Кроссовки известных брендов с&nbsp;доставкой по&nbsp;России и&nbsp;СНГ</h1>
@@ -46,7 +46,76 @@
       <button class="btn-reset hero__btn btn btn--primary">Перейти к покупкам</button>
   </div>
 </section>
-      
+      <section class="catalog" id="catalog">
+  <div class="catalog__container container">
+  <h2 class="title catalog__title">Каталог</h2>
+  <div class="grid">
+    <aside class="catalog__filter filter">
+  <form class="filter__container">
+    <h3 class="filter__title title-min">Подбор по&nbsp;параметрам</h3>
+    <div class="filter-block filter-price">
+      <strong class="filter-block__title filter-price__title">Цена, руб</strong>
+      <div class="filter-price__inps">
+        <input type="number" name="minCost" id="minCost" value="1850" class="filter-price__inp">
+        <input type="number" name="maxCost" value="25768" id="maxCost" class="filter-price__inp">
+      </div>
+      <div class="filter-price__range"></div>
+    </div>
+    <div class="filter-block filter-sex">
+      <strong class="filter-block__title filter-sex__title">Пол</strong>
+      <div class="filter-sex__checkboxes filter-block">
+        <div class="filter-sex__checkbox checkbox">
+        <input type="checkbox" name="manChecker" id="manChecker" class="checkbox__input">
+        <label for="manChecker" class="checkbox__label">Мужской</label>
+</div>
+        <div class="filter-sex__checkbox checkbox">
+        <input type="checkbox" name="womanChecker" id="womanChecker" class="checkbox__input">
+        <label for="womanChecker" class="checkbox__label">Женский</label>
+</div>
+      </div>
+    </div>
+    <div class="filter-block filter-size">
+      <strong class="filter-block__title filter-size__title">Размер</strong>
+      <table class="filter-size__table filter-table">
+        <caption class="filter-table__title">Таблица размеров</caption>
+        <tbody>
+          <tr>
+            <td class="filter-table__cell"><input type="checkbox" name="35" id="35"><label class="filter-table__content"
+                for="35">35</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="36" id="36"><label class="filter-table__content"
+                for="36">36</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="37" id="37"><label class="filter-table__content"
+                for="37">37</label class="filter-table__content"></td>
+          </tr>
+          <tr>
+            <td class="filter-table__cell"><input type="checkbox" name="38" id="38"><label class="filter-table__content"
+                for="38">38</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="39" id="39"><label class="filter-table__content"
+                for="39">39</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="40" id="40"><label class="filter-table__content"
+                for="40">40</label class="filter-table__content"></td>
+          </tr>
+          <tr>
+            <td class="filter-table__cell"><input type="checkbox" name="41" id="41"><label class="filter-table__content"
+                for="41">41</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="42" id="42"><label class="filter-table__content"
+                for="42">42</label class="filter-table__content"></td>
+            <td class="filter-table__cell"><input type="checkbox" name="43" id="43"><label class="filter-table__content"
+                for="43">43</label class="filter-table__content"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="submit" class="btn-reset btn btn--secondary filter__btn">Применить</button>
+    <button type="reset" class="btn-reset filter__btn--reset">сбросить</button>
+  </form>
+</aside>
+    <div class="catalog__goods goods grid">
+  The goods will be here soon...
+</div>
+  </div>
+  </div>
+</section> 
       
       
       
