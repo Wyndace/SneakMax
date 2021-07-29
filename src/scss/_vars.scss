@@ -25,11 +25,18 @@
 
   // Шрифты
   --font-family: "Intro", sans-serif;
-  --large-bold-font: 700 30px / 140% var(--font-family);
+
+  // bold
   --xlarge-regular-font: 400 36px / 140% var(--font-family);
+  --large-bold-font: 700 30px / 140% var(--font-family);
+
+  // regular
   --middle-regular-font: 400 30px / 140% var(--font-family);
-  --medium-book-font: 300 24px / 140% var(--font-family);
+  --premedium-regular-font: 400 20px / 140% var(--font-family);
   --small-regular-font: 400 16px / 140% var(--font-family);
+
+  // book
+  --medium-book-font: 300 24px / 140% var(--font-family);
   --small-book-font: 300 16px / 140% var(--font-family);
   --xsmall-book-font: 300 14px / 140% var(--font-family);
 }

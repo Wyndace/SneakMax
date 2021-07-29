@@ -2,7 +2,7 @@
   <form class="filter__container">
     <h3 class="filter__title title-min">Подбор по&nbsp;параметрам</h3>
     <div class="filter-block filter-price">
-      <strong class="filter-block__title filter-price__title">Цена, руб</strong>
+      <h4 class="filter-block__title filter-price__title">Цена, руб</h4>
       <div class="filter-price__inps">
         <input type="number" name="minCost" id="minCost" value="1850" class="filter-price__inp">
         <input type="number" name="maxCost" value="25768" id="maxCost" class="filter-price__inp">
@@ -10,7 +10,7 @@
       <div class="filter-price__range"></div>
     </div>
     <div class="filter-block filter-sex">
-      <strong class="filter-block__title filter-sex__title">Пол</strong>
+      <h4 class="filter-block__title filter-sex__title">Пол</h4>
       <div class="filter-sex__checkboxes filter-block">
         @include('./mixins/checkbox.html', {"id": "manChecker", "parrent-class": "filter-sex", "name":"manChecker",
         "text": "Мужской"})
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="filter-block filter-size">
-      <strong class="filter-block__title filter-size__title">Размер</strong>
+      <h4 class="filter-block__title filter-size__title">Размер</h4>
       <table class="filter-size__table filter-table">
         <caption class="filter-table__title">Таблица размеров</caption>
         <tbody>
