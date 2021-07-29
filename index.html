@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SneakMax</title>
-  <link rel="stylesheet" href="./css/common-b12d93d46f.min.css">
+  <link rel="stylesheet" href="./css/common-2e9ef508c5.min.css">
   <link rel="stylesheet" href="./css/vendor-b03f83f23a.min.css">
-  <link rel="stylesheet" href="./css/main-112969a819.min.css">
+  <link rel="stylesheet" href="./css/main-434d701a9c.min.css">
 </head>
 <body>
   <div class="site-container">
@@ -30,9 +30,9 @@
       <div class="cart header__cart">
         <button class="btn-reset cart__btn">
           <svg>
-            <use xlink:href="./img/sprite-b0326b503f.svg#cart"></use>
+            <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
           </svg>
-          <div class="cart__count">1</div>
+          <span class="cart__count">1</span>
         </button>
       </div>
     </div>
@@ -54,7 +54,7 @@
   <form class="filter__container">
     <h3 class="filter__title title-min">Подбор по&nbsp;параметрам</h3>
     <div class="filter-block filter-price">
-      <strong class="filter-block__title filter-price__title">Цена, руб</strong>
+      <h4 class="filter-block__title filter-price__title">Цена, руб</h4>
       <div class="filter-price__inps">
         <input type="number" name="minCost" id="minCost" value="1850" class="filter-price__inp">
         <input type="number" name="maxCost" value="25768" id="maxCost" class="filter-price__inp">
@@ -62,7 +62,7 @@
       <div class="filter-price__range"></div>
     </div>
     <div class="filter-block filter-sex">
-      <strong class="filter-block__title filter-sex__title">Пол</strong>
+      <h4 class="filter-block__title filter-sex__title">Пол</h4>
       <div class="filter-sex__checkboxes filter-block">
         <div class="filter-sex__checkbox checkbox">
         <input type="checkbox" name="manChecker" id="manChecker" class="checkbox__input">
@@ -75,33 +75,33 @@
       </div>
     </div>
     <div class="filter-block filter-size">
-      <strong class="filter-block__title filter-size__title">Размер</strong>
+      <h4 class="filter-block__title filter-size__title">Размер</h4>
       <table class="filter-size__table filter-table">
         <caption class="filter-table__title">Таблица размеров</caption>
         <tbody>
           <tr>
             <td class="filter-table__cell"><input type="checkbox" name="35" id="35"><label class="filter-table__content"
-                for="35">35</label class="filter-table__content"></td>
+                for="35">35</label></td>
             <td class="filter-table__cell"><input type="checkbox" name="36" id="36"><label class="filter-table__content"
-                for="36">36</label class="filter-table__content"></td>
+                for="36">36</label></td>
             <td class="filter-table__cell"><input type="checkbox" name="37" id="37"><label class="filter-table__content"
-                for="37">37</label class="filter-table__content"></td>
+                for="37">37</label></td>
           </tr>
           <tr>
             <td class="filter-table__cell"><input type="checkbox" name="38" id="38"><label class="filter-table__content"
-                for="38">38</label class="filter-table__content"></td>
+                for="38">38</label></td>
             <td class="filter-table__cell"><input type="checkbox" name="39" id="39"><label class="filter-table__content"
-                for="39">39</label class="filter-table__content"></td>
+                for="39">39</label></td>
             <td class="filter-table__cell"><input type="checkbox" name="40" id="40"><label class="filter-table__content"
-                for="40">40</label class="filter-table__content"></td>
+                for="40">40</label></td>
           </tr>
           <tr>
             <td class="filter-table__cell"><input type="checkbox" name="41" id="41"><label class="filter-table__content"
-                for="41">41</label class="filter-table__content"></td>
+                for="41">41</label></td>
             <td class="filter-table__cell"><input type="checkbox" name="42" id="42"><label class="filter-table__content"
-                for="42">42</label class="filter-table__content"></td>
+                for="42">42</label></td>
             <td class="filter-table__cell"><input type="checkbox" name="43" id="43"><label class="filter-table__content"
-                for="43">43</label class="filter-table__content"></td>
+                for="43">43</label></td>
           </tr>
         </tbody>
       </table>
@@ -110,8 +110,200 @@
     <button type="reset" class="btn-reset filter__btn--reset">сбросить</button>
   </form>
 </aside>
-    <div class="catalog__goods goods grid">
-  The goods will be here soon...
+    <div class="catalog__goods goods">
+  <h3 class="hidden goods__title">Товары</h3>
+  <ul class="goods__list list-reset grid">
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+    <li class="goods__item">
+      <article class="goods__card card">
+  <div class="img-holder card__img-holder">
+    <img src="https://fakeimg.pl/280x293/484283/fff/?text=Wyndace&font=Intro" alt="Кроссовки Nike Air Force 1 '07 QS">
+    <div class="card-action">
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#show"></use>
+        </svg>
+      </button>
+      <button class="btn-reset card-action__btn btn--secondary">
+        <svg>
+          <use xlink:href="./img/sprite-993a1cbcdc.svg#cart"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <p class="card__title">Кроссовки Nike Air Force 1 '07 QS</p>
+  <p class="card__price">11 000 р</p>
+</article>
+    </li>
+  </ul>
+  <button class="btn-reset btn btn--primary goods__btn">Показать ещё</button>
 </div>
   </div>
   </div>
