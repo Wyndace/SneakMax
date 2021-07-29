@@ -1,0 +1,19 @@
+.goods {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+    gap: var(--second-offset);
+  }
+
+  &__item {
+    grid-column: 3 span;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    margin-top: var(--main-offset);
+  }
+}
