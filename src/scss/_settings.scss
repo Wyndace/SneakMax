@@ -178,3 +178,17 @@ a {
     min-height: 100%;
   }
 }
+
+.curl {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 550px;
+  height: 424px;
+
+  > svg {
+    width: 100%;
+    height: 100%;
+  }
+}
