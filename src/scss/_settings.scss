@@ -152,6 +152,14 @@ a {
     line-height: 100%;
     color: var(--river-bed);
   }
+
+  &-sub {
+    margin: 0;
+    width: fit-content;
+    font: var(--small-book-font);
+    line-height: 100%;
+    color: var(--color-gray);
+  }
 }
 
 .text {
