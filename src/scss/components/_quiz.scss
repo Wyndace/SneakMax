@@ -1,0 +1,22 @@
+.quiz {
+  padding: var(--section-offset) 0;
+
+  &__container {
+    padding: var(--main-offset) var(--mega-offset);
+    background-color: var(--color-seashell-peach);
+  }
+
+  &__title {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__subtitle {
+    margin-bottom: var(--third-offset);
+  }
+
+  &-block {
+    border-top: 1px solid var(--color-gray);
+    padding-top: var(--second-offset);
+    width: 100%;
+  }
+}

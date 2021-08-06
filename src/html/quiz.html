@@ -1,0 +1,21 @@
+<section class="quiz" id="quiz">
+  <div class="quiz__container container">
+    <h2 class="title quiz__title">Мы подберем идеальную пару для вас</h2>
+    <p class="quiz__subtitle title-sub">Ответьте на три вопроса и мы вышлем каталог с самыми подходящими для вас моделями</p>
+    <form class="quiz-block" method="#">
+      <h3 class="title-min quiz-block__title">Какой тип кроссовок рассматриваете?</h3>
+      <div class="quiz-block__questions">
+        @include('./question.html', {"text": "кеды", "img": "https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro", "id": "first"})
+        @include('./question.html', {"text": "кеды", "img": "https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro", "id": "second"})
+        @include('./question.html', {"text": "кеды", "img": "https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro", "id": "third"})
+        @include('./question.html', {"text": "кеды", "img": "https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro", "id": "fourth"})
+        @include('./question.html', {"text": "кеды", "img": "https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro", "id": "fiveth"})
+        @include('./question.html', {"text": "кеды", "img": "https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro", "id": "sixth"})
+      </div>
+      <div class="quiz-block__bottom">
+        <p class="quiz-block__pagination">1 из 3</p>
+        <button type="submit" class="btn-reset btn btn--thirdly quiz-block__btn">Следующий шаг</button>
+      </div>
+    </form>
+  </div>
+</section>

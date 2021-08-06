@@ -1,0 +1,32 @@
+.quiz-block {
+  &__title {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__questions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 40px;
+    width: 100%;
+    gap: 20px 70px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--color-gray);
+    padding-top: var(--second-offset);
+    width: 100%;
+  }
+
+  &__pagination {
+    color: var(--color-gray);
+  }
+}
+
+.question {
+  &__img {
+    margin-bottom: var(--third-offset);
+    border-radius: var(--border-radius);
+  }
+}
