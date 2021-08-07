@@ -1,6 +1,12 @@
 .team {
+  position: relative;
   padding: var(--section-offset) 0;
   background-color: var(--color-east-bay);
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
 
   &__title {
     margin-bottom: var(--main-offset);
