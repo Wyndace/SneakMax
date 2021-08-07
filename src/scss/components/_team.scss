@@ -1,0 +1,38 @@
+.team {
+  padding: var(--section-offset) 0;
+  background-color: var(--color-east-bay);
+
+  &__title {
+    margin-bottom: var(--main-offset);
+    color: var(--color-white);
+  }
+
+  &__persons {
+    gap: var(--main-offset) var(--second-offset);
+  }
+
+  &__person {
+    grid-column: 4 span;
+  }
+}
+
+.person {
+  &__img-wrapper {
+    margin-bottom: var(--second-offset);
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: var(--second-offset);
+    font: var(--medium-bold-font);
+    line-height: 100%;
+    color: var(--color-white);
+  }
+
+  &__metier {
+    margin: 0;
+    font: var(--small-book-font);
+    line-height: 100%;
+    color: var(--color-white);
+  }
+}
