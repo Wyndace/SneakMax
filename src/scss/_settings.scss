@@ -218,3 +218,53 @@ a {
     height: 100%;
   }
 }
+
+.tooltip {
+  @include tooltip(var(--color-river-bed), var(--color-white), 426px, var(--third-offset) var(--second-offset), var(--xsmall-book-font));
+
+  // .tooltip__btn
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    box-shadow: 2px 4px 10px rgba(0, 13, 84, 0.2);
+    background-color: var(--color-white);
+
+    >svg {
+      width: 7px;
+      height: 10px;
+      object-fit: cover;
+    }
+  }
+
+  // .tooltip__info
+
+  &__info {
+    left: -10px;
+    top: initial;
+    bottom: calc(100% + 14px);
+    box-shadow: 4px 8px 20px rgba(0, 13, 84, 0.2);
+    letter-spacing: initial;
+    text-transform: initial;
+  }
+
+  // .tooltip__info::after
+
+  &__info::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -7px;
+    border-style: solid;
+    border-width: 8px 8px 0;
+    border-color: var(--color-white) transparent;
+    border-radius: var(--border-radius);
+    width: 0;
+    height: 0;
+  }
+}
