@@ -1,0 +1,48 @@
+<section class="contacts" id="contacts">
+  <div class="contacts__container container grid">
+    <div class="contacts__inner">
+      <h2 class="contacts__title title">Контакты</h2>
+      <ul class="contacts__info info-contacts list-reset">
+        <li class="info-contacts__item">
+          <h3 class="info-contacts__title">
+            Главный офис
+            @include('./mixins/tooltip.html', {'parent-class': 'info-contacts', 'text': 'Адрес и телефон для корреспонденции, инвесторов. Вопросы о доставке, качестве обслуживания и товара просьба задавать в отдел продаж', 'title': 'Дополнительная информация', 'btn-classes': '', 'btn-text': '<svg><use xlink:href="./img/sprite.svg#question"></use></svg>'})
+          </h3>
+          <a href="tel:+78007898989" class="info-contacts__phone">+7 800 789 89 89</a>
+          <address class="info-contacts__address">г. Санкт-Петербург, Комсомольская, 43 к1</address>
+        </li>
+        <li class="info-contacts__item">
+          <h3 class="info-contacts__title">
+            отдел продаж
+          </h3>
+          <a href="tel:+78007898989" class="info-contacts__phone">+7 800 789 89 89</a>
+          <address class="info-contacts__address">г. Санкт-Петербург, Комсомольская, 43 к1</address>
+        </li>
+      </ul>
+      <ul class="contacts__socials socials-contacts list-reset">
+        <li class="socials-contacts__item">
+          <a href="https://vk.com/stylelifeweb.wyndace" class="socials-contacts__link">
+          <svg>
+              <use xlink:href="./img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        </li>
+        <li class="socials-contacts__item">
+          <a href="https://instagram.com/wyndace.av" class="socials-contacts__link">
+          <svg>
+              <use xlink:href="./img/sprite.svg#instagram"></use>
+          </svg>
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts__map" style="position: relative; overflow: hidden;">
+      <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+        style="position: absolute; top: 0; font-size: 12px; r: #eee;">Санкт‑Петербург</a>
+      <a href="https://yandex.ru/maps/geo/sankt_peterburg/53152804/?ll=30.543710%2C59.973162&utm_medium=mapframe&utm_source=maps&z=10"
+        style="position: absolute; top: 14px; font-size: 12px; color: #eee;">Санкт-Петербург</a>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCUiR0bQ-A" width="680" height="495" frameborder="1"
+        allowfullscreen="true" style="position: relative;"></iframe>
+    </div>
+  </div>
+</section>
