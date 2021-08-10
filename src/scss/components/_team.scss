@@ -25,6 +25,10 @@
 .person {
   &__img-wrapper {
     margin-bottom: var(--second-offset);
+
+    img {
+      border-radius: var(--border-radius);
+    }
   }
 
   &__name {

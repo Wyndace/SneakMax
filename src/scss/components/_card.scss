@@ -5,6 +5,10 @@
     margin-bottom: var(--third-offset);
     width: 280px;
     height: 293px;
+
+    img {
+      border-radius: var(--border-radius);
+    }
   }
 
   &__title {
