@@ -1,1 +1,24 @@
-// Write your code here...
+.footer {
+  background-color: var(--color-river-bed);
+
+  // .footer__container
+
+  &__container {
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  // .footer__left
+
+  &__left {
+    grid-column: 2 span;
+  }
+
+  // .footer__right
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 10 span;
+  }
+}
