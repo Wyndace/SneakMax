@@ -1,0 +1,138 @@
+.prefooter {
+  // .prefooter__container
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: var(--section-offset) 0;
+  }
+
+  // .prefooter__action
+
+  &__action {
+    max-width: 380px;
+  }
+
+  // .prefooter__instagram
+
+  &__instagram {
+    width: 680px;
+  }
+}
+
+.action-prefooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  padding: var(--main-offset) var(--second-offset);
+  max-height: 400px;
+  text-align: center;
+  background-color: var(--color-east-bay);
+
+  // .action-prefooter__title
+
+  &__title {
+    margin: 0;
+    margin-bottom: var(--second-offset);
+    color: var(--color-white);
+  }
+
+  // .action-prefooter__description
+
+  &__description {
+    margin: 0;
+    margin-bottom: var(--main-offset);
+    max-width: 260px;
+    font: var(--small-book-font);
+    line-height: 100%;
+    color: var(--color-white);
+  }
+
+  // .action-prefooter__form
+
+  &__form {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.form-prefooter {
+  // .form-prefooter__fields
+
+  &__fields {
+    margin: 0;
+    border: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  // .form-prefooter__input
+
+  &__input {
+    margin: 0;
+    margin-bottom: var(--third-offset);
+    border-radius: var(--border-radius);
+    padding: var(--second-offset);
+    width: 100%;
+    height: 60px;
+    font: var(--small-book-font);
+
+    &::placeholder {
+      color: var(--color-bombay);
+    }
+  }
+
+  // .form-prefooter__bot
+
+  &__btn {
+    width: 100%;
+  }
+}
+
+.instagram-prefooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // .instagram-prefooter__logo
+
+  &__logo {
+    margin: 0;
+    margin-bottom: var(--second-offset);
+    width: 157px;
+    height: 60px;
+    background: url("../../img/instagram-logo.svg") center center/100% no-repeat;
+  }
+
+  // .instagram-prefooter__photos
+
+  &__photos {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    grid-template-rows: 160px 160px;
+    width: 100%;
+    height: 100%;
+    gap: 15px 20px;
+  }
+
+  // .instagram-prefooter__item
+
+  &__item {
+    grid-column: 1 span;
+    grid-row: 1 span;
+
+    img {
+      border-radius: var(--border-radius);
+    }
+  }
+
+  &__active {
+    grid-column: 2 span;
+    grid-row: 2 span;
+  }
+}
