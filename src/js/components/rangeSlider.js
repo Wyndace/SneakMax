@@ -17,7 +17,7 @@ if (rangeSlider) {
 	const inputMax = document.getElementById('rangeSlider_inputMax');
 	const inputs = [inputMin, inputMax];
 
-	rangeSlider.noUiSlider.on('input', function(values, handle){
+	rangeSlider.noUiSlider.on('update', function(values, handle){
 		inputs[handle].value = Math.round(values[handle]);
 	});
 
