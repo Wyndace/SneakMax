@@ -31,7 +31,7 @@ if (rangeSlider) {
 	};
 
 	inputs.forEach((el, index) => {
-		el.addEventListener('update', (e) => {
+		el.addEventListener('change', (e) => {
 			console.log(index);
 			setRangeSlider(index, e.currentTarget.value);
 		});
