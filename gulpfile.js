@@ -168,13 +168,8 @@ const fontsStyleBuilding = (done) => {
 
 
 const scriptsBuilding = () => {
-	src('./src/js/vendor/**/*js')
-	.pipe(concat('vendor.js'))
-	.pipe(gulpIf(isBuilding, uglify().on("error", notify.onError())))
-	.pipe(gulpIf(!isBuilding, sourcemaps.init()))
-	.pipe(gulpIf(!isBuilding, dest('./app/js'), dest(`./${buildDir}/js`)))
 return src(
-	['./src/js/global.js', './src/js/main.js'])
+	['./src/js/global.js', './src/js/main.js', './src/js/vendor.js'])
 	.pipe(fileinclude({
 		prefix: 'fileInclude.',
 		basepath: '@file'
