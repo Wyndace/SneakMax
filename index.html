@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SneakMax</title>
-  <link rel="stylesheet" href="./css/common-1501540e3e.min.css">
-  <link rel="stylesheet" href="./css/vendor-b03f83f23a.min.css">
-  <link rel="stylesheet" href="./css/main-b9f6985def.min.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SneakMax | Web layout by Wyndace</title>
+<link rel="stylesheet" href="./css/common-ebd1b5eced.min.css">
+<link rel="stylesheet" href="./css/vendor-fb10d4ed9e.min.css">
+<link rel="stylesheet" href="./css/main-e78fb2e471.min.css">
 </head>
+
 <body>
   <div class="site-container">
-  <header class="header">
+      <header class="header">
   <div class="container grid header__container">
     <div class="header__left">
       <a href="#hero" class="logo header__logo">SneakMax</a>
@@ -56,10 +58,10 @@
     <div class="filter-block filter-price">
       <h4 class="filter-block__title filter-price__title">Цена, руб</h4>
       <div class="filter-price__inps">
-        <input type="number" name="minCost" id="minCost" value="1850" class="filter-price__inp">
-        <input type="number" name="maxCost" value="25768" id="maxCost" class="filter-price__inp">
+        <input type="number" name="minCost" value="1850" class="filter-price__inp" id="rangeSlider_inputMin">
+        <input type="number" name="maxCost" value="25768" class="filter-price__inp" id="rangeSlider_inputMax">
       </div>
-      <div class="filter-price__range"></div>
+      <div class="filter-price__range-slider" id="range-slider"></div>
     </div>
     <div class="filter-block filter-sex">
       <h4 class="filter-block__title filter-sex__title">Пол</h4>
@@ -384,67 +386,66 @@
   <figure>
     <svg class="curl-circle">
       <use xlink:href="./img/sprite-1a637bb3c9.svg#figure-team"></use>
-  </svg>
-</figure>
+    </svg>
+  </figure>
   <div class="team__container container">
     <h2 class="team__title title">Наша команда</h2>
-      <ul class="list-reset grid team__persons">
-        <li class="team__person">
-          <article class="person">
+    <ul class="list-reset grid team__persons">
+      <li class="team__person">
+        <article class="person">
   <div class="img-wrapper person__img-wrapper">
     <img src="http://lorempixel.com/500/500/people/7" alt="фото Максим Золотарёв">
   </div>
   <h3 class="person__name">Максим Золотарёв</h3>
   <p class="person__metier">Администратор</p>
 </article>
-        </li>
-        <li class="team__person">
-          <article class="person">
+      </li>
+      <li class="team__person">
+        <article class="person">
   <div class="img-wrapper person__img-wrapper">
     <img src="http://lorempixel.com/500/500/people/9" alt="фото Максим Золотарёв">
   </div>
   <h3 class="person__name">Максим Золотарёв</h3>
   <p class="person__metier">Администратор</p>
 </article>
-        </li>
-        <li class="team__person">
-          <article class="person">
+      </li>
+      <li class="team__person">
+        <article class="person">
   <div class="img-wrapper person__img-wrapper">
     <img src="http://lorempixel.com/500/500/people/3" alt="фото Максим Золотарёв">
   </div>
   <h3 class="person__name">Максим Золотарёв</h3>
   <p class="person__metier">Администратор</p>
 </article>
-        </li>
-        <li class="team__person">
-          <article class="person">
+      </li>
+      <li class="team__person">
+        <article class="person">
   <div class="img-wrapper person__img-wrapper">
     <img src="http://lorempixel.com/500/500/people/10" alt="фото Максим Золотарёв">
   </div>
   <h3 class="person__name">Максим Золотарёв</h3>
   <p class="person__metier">Администратор</p>
 </article>
-        </li>
-        <li class="team__person">
-          <article class="person">
+      </li>
+      <li class="team__person">
+        <article class="person">
   <div class="img-wrapper person__img-wrapper">
     <img src="http://lorempixel.com/500/500/people/5" alt="фото Максим Золотарёв">
   </div>
   <h3 class="person__name">Максим Золотарёв</h3>
   <p class="person__metier">Администратор</p>
 </article>
-        </li>
-        <li class="team__person">
-          <article class="person">
+      </li>
+      <li class="team__person">
+        <article class="person">
   <div class="img-wrapper person__img-wrapper">
     <img src="http://lorempixel.com/500/500/people/6" alt="фото Максим Золотарёв">
   </div>
   <h3 class="person__name">Максим Золотарёв</h3>
   <p class="person__metier">Администратор</p>
 </article>
-        </li>
-      </ul>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
       <section class="faq" id="faq">
@@ -564,7 +565,7 @@
     </div>
   </div>
 </section>
-  <footer class="footer">
+      <footer class="footer">
   <div class="footer__container container grid">
     <div class="footer__left">
       <a href="#hero" class="logo footer__logo">SneakMax</a>
@@ -583,6 +584,9 @@
     </div>
   </div>
 </footer>
-</div>
+  </div>
+  <script src="./js/vendor-c8e514152c.js"></script>
+<script src="./js/global-5997b2a913.js"></script>
+<script src="./js/main-0cc2a8b1ad.js"></script>
 </body>
 </html>
