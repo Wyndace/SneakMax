@@ -223,6 +223,22 @@ a {
   }
 }
 
+._scroll-disabled {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  &_horizontal {
+    overflow-x: hidden;
+    width: 100vw;
+  }
+
+  &_vertical {
+    overflow-y: hidden;
+    height: 100vh;
+  }
+}
+
 .tooltip {
   @include tooltip(var(--color-river-bed), var(--color-white), 426px, var(--third-offset) var(--second-offset), var(--xsmall-book-font));
 
