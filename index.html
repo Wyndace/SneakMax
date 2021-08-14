@@ -6,9 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SneakMax | Web layout by Wyndace</title>
-<link rel="stylesheet" href="./css/common-4d27945c9a.min.css">
+<link rel="stylesheet" href="./css/common-1a2967a527.min.css">
 <link rel="stylesheet" href="./css/vendor-fb10d4ed9e.min.css">
-<link rel="stylesheet" href="./css/main-e78fb2e471.min.css">
+<link rel="stylesheet" href="./css/main-4985e9f172.min.css">
 </head>
 
 <body>
@@ -66,12 +66,12 @@
     <div class="filter-block filter-sex">
       <h4 class="filter-block__title filter-sex__title">Пол</h4>
       <div class="filter-sex__checkboxes filter-block">
-        <div class="filter-sex__checkbox checkbox">
-        <input type="checkbox" name="manChecker" id="manChecker" class="checkbox__input">
+        <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="manChecker" id="manChecker" class="checkbox__input">
         <label for="manChecker" class="checkbox__label">Мужской</label>
 </div>
-        <div class="filter-sex__checkbox checkbox">
-        <input type="checkbox" name="womanChecker" id="womanChecker" class="checkbox__input">
+        <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="womanChecker" id="womanChecker" class="checkbox__input">
         <label for="womanChecker" class="checkbox__label">Женский</label>
 </div>
       </div>
@@ -334,43 +334,43 @@
       <div class="quiz-block__questions">
         <div class="quiz-block__question question">
   <img src="https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro" alt="кеды" class="question__img">
-  <div class="question__checkbox checkbox">
-        <input type="checkbox" name="кеды" id="first" class="checkbox__input">
+  <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="кеды" id="first" class="checkbox__input">
         <label for="first" class="checkbox__label">кеды</label>
 </div>
 </div>
         <div class="quiz-block__question question">
   <img src="https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro" alt="кеды" class="question__img">
-  <div class="question__checkbox checkbox">
-        <input type="checkbox" name="кеды" id="second" class="checkbox__input">
+  <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="кеды" id="second" class="checkbox__input">
         <label for="second" class="checkbox__label">кеды</label>
 </div>
 </div>
         <div class="quiz-block__question question">
   <img src="https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro" alt="кеды" class="question__img">
-  <div class="question__checkbox checkbox">
-        <input type="checkbox" name="кеды" id="third" class="checkbox__input">
+  <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="кеды" id="third" class="checkbox__input">
         <label for="third" class="checkbox__label">кеды</label>
 </div>
 </div>
         <div class="quiz-block__question question">
   <img src="https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro" alt="кеды" class="question__img">
-  <div class="question__checkbox checkbox">
-        <input type="checkbox" name="кеды" id="fourth" class="checkbox__input">
+  <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="кеды" id="fourth" class="checkbox__input">
         <label for="fourth" class="checkbox__label">кеды</label>
 </div>
 </div>
         <div class="quiz-block__question question">
   <img src="https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro" alt="кеды" class="question__img">
-  <div class="question__checkbox checkbox">
-        <input type="checkbox" name="кеды" id="fiveth" class="checkbox__input">
+  <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="кеды" id="fiveth" class="checkbox__input">
         <label for="fiveth" class="checkbox__label">кеды</label>
 </div>
 </div>
         <div class="quiz-block__question question">
   <img src="https://fakeimg.pl/280x120/484283/fff/?text=Wyndace&font=Intro" alt="кеды" class="question__img">
-  <div class="question__checkbox checkbox">
-        <input type="checkbox" name="кеды" id="sixth" class="checkbox__input">
+  <div class="@parent-class__checkbox checkbox">
+        <input type="checkbox" @data-attrs name="кеды" id="sixth" class="checkbox__input">
         <label for="sixth" class="checkbox__label">кеды</label>
 </div>
 </div>
@@ -451,9 +451,9 @@
       <section class="faq" id="faq">
   <div class="container faq__container">
     <h2 class="title faq__title">Часто задаваемые вопросы</h2>
-    <ul class="faq__questions questions list-reset">
+    <ul data-spoilers data-one-spoiler class="faq__questions questions list-reset">
       <li class="questions__item item-questions">
-        <button class="btn-reset item-questions__title">Вопрос 1
+        <button data-spoiler class="btn-reset item-questions__title _active">Вопрос 1
           <svg>
             <use xlink:href="./img/sprite-1a637bb3c9.svg#cross"></use>
           </svg>
@@ -462,7 +462,7 @@
           воспитателями и всякими другими людьми</p>
       </li>
       <li class="questions__item item-questions">
-        <button class="btn-reset item-questions__title close">Вопрос 2
+        <button data-spoiler class="btn-reset item-questions__title">Вопрос 2
           <svg>
             <use xlink:href="./img/sprite-1a637bb3c9.svg#cross"></use>
           </svg>
@@ -586,7 +586,7 @@
 </footer>
   </div>
   <script src="./js/vendor-c8e514152c.js"></script>
-<script src="./js/global-b2d86df180.js"></script>
+<script src="./js/global-c5216359a7.js"></script>
 <script src="./js/main-88a1a64782.js"></script>
 </body>
 </html>
