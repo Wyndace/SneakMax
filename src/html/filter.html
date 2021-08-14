@@ -13,9 +13,9 @@
       <h4 class="filter-block__title filter-sex__title">Пол</h4>
       <div class="filter-sex__checkboxes filter-block">
         @include('./mixins/checkbox.html', {"id": "manChecker", "parrent-class": "filter-sex", "name":"manChecker",
-        "text": "Мужской"})
+        "text": "Мужской", 'type': 'checkbox'})
         @include('./mixins/checkbox.html', {"id": "womanChecker", "parrent-class": "filter-sex", "name":"womanChecker",
-        "text": "Женский"})
+        "text": "Женский", 'type': 'checkbox'})
       </div>
     </div>
     <div class="filter-block filter-size">
