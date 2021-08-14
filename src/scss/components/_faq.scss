@@ -48,16 +48,14 @@
     >svg {
       width: 15px;
       height: 15px;
+      transform: rotate(-45deg);
+      transition: transform 0.3s ease;
     }
 
-    &.close {
+    &._active {
       >svg {
-        transform: rotate(45deg);
+        transform: rotate(0);
       }
-    }
-
-    &.close + .item-questions__text {
-      display: none;
     }
   }
 
